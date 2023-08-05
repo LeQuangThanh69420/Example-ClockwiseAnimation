@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <title>✈___█_█_</title>
+
   <style>
     .loading-center::after {
       content: '';
@@ -60,13 +62,8 @@
       }
     }
   </style>
-  <title>✈___█_█_</title>
+  
   <script>
-    function animateTitle() {
-      i >= message.length - 1 ? (i = 0) : i++,
-        (document.title = message[i]),
-        setTimeout("animateTitle()", 800);
-    }
     var message = [
       "✈___█__█_",
       "_✈__█__█_",
@@ -76,21 +73,27 @@
       "____☠✈█_",
       "____☠__☠_",
     ],
-      i = 0;
-    animateTitle();
-  </script>
-  <script src="jquery-2.2.4.min.js"></script>
-  <script src="jquery-Backstretch-2.1.18.js"></script>
-</head>
+    i = 0;
 
-<body style="background-color: black;">
-  <script>
+    function animateTitle() {
+      i >= message.length - 1 ? (i = 0) : i++,
+        (document.title = message[i]),
+        setTimeout("animateTitle()", 800);
+    }
+
+    animateTitle();
+
     $.backstretch([
       "bg1.gif",
       "bg2.gif",
       "bg3.gif",
     ], { duration: 3000, fade: 750 });
   </script>
+  <script src="jquery-2.2.4.min.js"></script>
+  <script src="jquery-Backstretch-2.1.18.js"></script>
+</head>
+
+<body style="background-color: black;">
   <div class="loading-center"></div>
 </body>
 
